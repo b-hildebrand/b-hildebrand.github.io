@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brent Hildebrand</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
+  <script type="text/javascript" src="jquery.powertip.js"></script>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="jquery.powertip.css" />
+  <link rel="icon"
+      type="image/png"
+      href="images/favicon.png">
+
+  <script>
+        $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors:['firstPage', 'secondPage']
+        });
+//sk;fmcvpskc[sp]
+        $.fn.fullpage.setAllowScrolling(false, 'down');
+
+        $('.image').powerTip({
+        followMouse: true
+        });
+
+        $(".info").click(function(){
+        $(".info_container").toggleClass("show");
+        });
+
+        $(".slide").click(function(){
+        $(".info_container").removeClass("show");
+        });
+
+        $(".fp-controlArrow").click(function(){
+        $(".info_container").removeClass("show");
+        });
+
+        $("a").click(function(){
+        $(".info_container").removeClass("show");
+        });
+      });
+  </script>
+  <style>
+  body{
+    margin:0;
+    padding:0;
+    font-family: helvetica;
+  }
+  img{
+    display: block;
+  }
+  a{
+    color:red;
+  }
+  .header{
+    font-size: 35px;
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    z-index: 10;
+    margin:10px 0;
+    width:100%;
+    color: red;
+  }
+  .info{
+    font-size: 17px;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    z-index: 10;
+    margin-left: -12px;
+    width:100%;
+    color: red;
+    border-radius: 17px;
+    width:20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid red;
+    cursor: pointer;
+  }
+  .info_container{
+    background-color: white;
+    height:auto;
+    top:30vh;
+    left:50%;
+    position:absolute;
+    z-index: 0;
+    margin-left: -150px;
+    width:250px;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    padding: 5px 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px purple;
+    border: 1px solid purple;
+  }
+  .show{
+    opacity: 1;
+    z-index: 10;
+  }
+  .image{
+    width: 700px;
+    height: auto;
+    margin: 15vh auto 15vh auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 10px blue;
+    position: relative;
+    z-index: 10;
+  }
+  .fp-controlArrow.fp-prev {
+    left: 20px;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(images/left.png) no-repeat;
+    background-size: 50px 101px;
+    cursor: pointer;
+}
+.fp-controlArrow.fp-next {
+    right: 20px;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(images/right.png) no-repeat;
+    background-size: 50px 101px;
+    cursor: pointer;
+}
+.resume{
+  margin: 70px auto;
+  background-image: url("images/resume.jpg");
+  background-size: contain;
+  width: 451px;
+  height: 582.5px;
+  box-shadow: 0px 4px 10px black;
+}
+.up{
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    border: none;
+    width: 50px;
+    height: auto;
+    background-size: 50px 101px;
+    cursor: pointer;
+    z-index: 9;
+    margin-left: -12px;
+}
+  </style>
+</head>
+<body>
+  <div class="header"><strong><em>Brent Hildebrand</em></strong></div>
+  <div class="info_container"><br><br>Brent Hildebrand lives and works in New York City<br><br>For inquiries please contact: brenthildy@gmail.com<br><br><a href="#secondPage/resume"><em>Resume</em></a><br><br></div>
+  <div id="fullpage">
+    <div class="section"><div class="info"><strong>?</strong></div>
+      <div class="slide" style="background-color:#ffc7ae;"><div class="image" title="Spread for <em><u>Yung Magazine</u></em>" style="box-shadow: 0px 4px 10px red;"><img src="images/Spread1.jpg" width="700px"></div></div>
+      <div class="slide" style="background-color:#ccffff;"><div class="image" title="Spread for <em><u>Yung Magazine</u></em>"><img src="images/Spread2.jpg" width="700"></div></div>
+      <div class="slide" style="background-color:#ddc4f8"><div class="image" title="Vinyl design and logo made for <em><u>Indians</u></em>" style="box-shadow: 0px 4px 10px purple;"><img src="images/indians.jpg" width="700px"></div></div>
+      <div class="slide" style="background-color:#dbffeb"><div class="image" title="Fictional logo for <em><u>something?</u></em>" style="box-shadow: 0 0 0 transparent; width:400px;"><img src="images/lips.png" width="400px"></div></div>
+      <div class="slide" style="background-color:#daff8e;"><div class="image" title="Spread for <em><u>Yung Magazine</u></em>" style="box-shadow: 0px 4px 10px green;"><img src="images/Spread3.jpg" width="700"></div></div>
+      <div class="slide" style="background-color:#ffed8e;"><div class="image" title="Illustration for <em><u>NY Times</u></em> Op Ed made at <em><u>Zut Alors!</u></em>" style="box-shadow: 0px 4px 10px #ff8533;width:500px;"><img src="images/nytimes.png" width="500"></div></div>
+      <div class="slide" style="background-color:#dcdcdc;"><div class="image" title="Fictional logo for neighborhood implemented on grocery bag" style="box-shadow: 0 0 0 transparent; width:300px;"><img src="images/sunsetpark.png" width="300px"></div></div>
+      <div class="slide" style="background-color:#fee7ff;"><div class="image" title="Self-promo for <em><u>Zut Alors!</u></em>" style="box-shadow: 0px 4px 10px purple; width:300px;"><img src="images/zutbook.jpg" width="300px"></div></div>
+      <div class="slide" style="background-color:#3399ff;"><div class="image" title="Spread for <em><u>Yung Magazine</u></em>" style="box-shadow: 0px 4px 10px purple;"><img src="images/spread4.gif" width="700px"></div></div>
+      <div class="slide" style="background-color:#7b33ff;"><div class="image" title="Fictional show poster for a subway performer" style="box-shadow: 0px 4px 10px black; width:500px"><img src="images/poster.jpg" width="500px"></div></div>
+    </div>
+    <div class="section" id="#resume" style="background-color:#6600ff" data-anchor="resume"><div class="resume"></div><div class="up"><a href="#firstPage/?">Back</a></div></div>
+  </div>
+</body>
+</html>
