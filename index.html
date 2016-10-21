@@ -63,10 +63,11 @@
 
       <br>
 
-    <form action="action_page.php">
-    <input type="text" name="firstname" placeholder="Email">
+    <form id="gform" method="POST" class="pure-form pure-form-stacked"
+						   action="https://script.google.com/macros/s/AKfycbwsn83w7E_04mqTb8DaTCiOCu1VgJe445BFhbiII9EO0fAx2rPg/exec">
+    <input id="name" name="name" required type="text" name="firstname" placeholder="Email">
     <br>
-    <textarea name="message" rows="6" style="width: calc(100% - 14px);" placeholder="Message"></textarea>
+    <textarea id="email" required name="email" type="email" name="message" rows="6" style="width: calc(100% - 14px);" placeholder="Message"></textarea>
     <input class="submit-btn" type="submit" value="Submit">
   </form>
 
