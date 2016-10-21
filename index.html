@@ -1,184 +1,214 @@
 <!DOCTYPE html>
-<html>
 <head>
-  <title>Brent Hildebrand</title>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.fullPage.js"></script>
-  <script type="text/javascript" src="jquery.powertip.js"></script>
-  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="jquery.powertip.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/73630fef6c.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+
   <link rel="icon"
-      type="image/png"
-      href="images/favicon.png">
+      type="image/jpg"
+      href="images/favicon.jpg">
 
-  <script>
-        $(document).ready(function() {
-        $('#fullpage').fullpage({
-          anchors:['firstPage', 'secondPage']
-        });
-//sk;fmcvpskc[sp]
-        $.fn.fullpage.setAllowScrolling(false, 'down');
-
-        $('.image').powerTip({
-        followMouse: true
-        });
-
-        $(".info").click(function(){
-        $(".info_container").toggleClass("show");
-        });
-
-        $(".slide").click(function(){
-        $(".info_container").removeClass("show");
-        });
-
-        $(".fp-controlArrow").click(function(){
-        $(".info_container").removeClass("show");
-        });
-
-        $("a").click(function(){
-        $(".info_container").removeClass("show");
-        });
-      });
-  </script>
-  <style>
-  body{
-    margin:0;
-    padding:0;
-    font-family: helvetica;
-  }
-  img{
-    display: block;
-  }
-  a{
-    color:red;
-  }
-  .header{
-    font-size: 35px;
-    position: fixed;
-    left: 25px;
-    top: 25px;
-    z-index: 10;
-    margin:10px 0;
-    width:100%;
-    color: red;
-  }
-  .info{
-    font-size: 17px;
-    position: absolute;
-    left: 50%;
-    bottom: 25px;
-    z-index: 10;
-    margin-left: -12px;
-    width:100%;
-    color: red;
-    border-radius: 17px;
-    width:20px;
-    height: 20px;
-    text-align: center;
-    border: 1px solid red;
-    cursor: pointer;
-  }
-  .info_container{
-    background-color: white;
-    height:auto;
-    top:30vh;
-    left:50%;
-    position:absolute;
-    z-index: 0;
-    margin-left: -150px;
-    width:250px;
-    opacity: 0;
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
-    padding: 5px 25px;
-    padding-bottom: 15px;
-    text-align: center;
-    box-shadow: 0px 4px 10px purple;
-    border: 1px solid purple;
-  }
-  .show{
-    opacity: 1;
-    z-index: 10;
-  }
-  .image{
-    width: 700px;
-    height: auto;
-    margin: 15vh auto 15vh auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-shadow: 0px 4px 10px blue;
-    position: relative;
-    z-index: 10;
-  }
-  .fp-controlArrow.fp-prev {
-    left: 20px;
-    border: none;
-    width: 50px;
-    height: 101px;
-    background: url(images/left.png) no-repeat;
-    background-size: 50px 101px;
-    cursor: pointer;
-}
-.fp-controlArrow.fp-next {
-    right: 20px;
-    border: none;
-    width: 50px;
-    height: 101px;
-    background: url(images/right.png) no-repeat;
-    background-size: 50px 101px;
-    cursor: pointer;
-}
-.resume{
-  margin: 70px auto;
-  background-image: url("images/resume.jpg");
-  background-size: contain;
-  width: 451px;
-  height: 582.5px;
-  box-shadow: 0px 4px 10px black;
-}
-.up{
-    position: absolute;
-    left: 50%;
-    bottom: 25px;
-    border: none;
-    width: 50px;
-    height: auto;
-    background-size: 50px 101px;
-    cursor: pointer;
-    z-index: 9;
-    margin-left: -12px;
-}
-.text{
-  height: 300px;
-  width: 400px;
-  margin-left: calc(50vw - 250px);
-  margin-top: 0vh;
-  padding: 50px;
-  box-shadow: 0px 4px 10px #444;
-  background-color: white;
-  box-shadow: 0px 4px 10px orange;
-  border: 1px solid orange;
-}
-  </style>
 </head>
 <body>
-  <div class="header"><strong><em>Brent Hildebrand</em></strong></div>
-  <div class="info_container"><br><br>Brent Hildebrand lives and works in New York City<br><br>For inquiries please contact: brenthildy@gmail.com<br><br><a href="#secondPage/resume"><em>Resume</em></a><br><br></div>
-  <div id="fullpage">
-    <div class="section"><div class="info"><strong>?</strong></div>
-      <div class="slide" style="background-color:#ffc7ae;"><div class="image" title="Spread for <em><u>Yung Magazine</u></em>" style="box-shadow: 0px 4px 10px red;"><img src="images/Spread1.jpg" width="700px"></div></div>
-      <div class="slide" style="background-color:#ccffff;"><div class="image" title="Spread for <em><u>Yung Magazine</u></em>"><img src="images/Spread2.jpg" width="700"></div></div>
-      <div class="slide" style="background-color:#ddc4f8"><div class="image" title="Vinyl design and logo made for <em><u>Indians</u></em>" style="box-shadow: 0px 4px 10px purple;"><img src="images/indians.jpg" width="700px"></div></div>
-      <div class="slide" style="background-color:#dbffeb"><div class="image" style="box-shadow: 0 0 0 transparent; width:400px;"><img src="images/lips.png" width="400px"></div></div>
-      <div class="slide" style="background-color:#daff8e;"><div class="image" title="Spread for <em><u>Yung Magazine</u></em>" style="box-shadow: 0px 4px 10px green;"><img src="images/Spread3.jpg" width="700"></div></div>
-      <div class="slide" style="background-color:#ffed8e;"><div class="image" title="Illustration for <em><u>NY Times</u></em> Op Ed made at <em><u>Zut Alors!</u></em>" style="box-shadow: 0px 4px 10px #ff8533;width:500px;"><img src="images/nytimes.png" width="500"></div></div>
-      <div class="slide" style="background-color:#dcdcdc;"><div class="image" title="Fictional logo for neighborhood implemented on grocery bag" style="box-shadow: 0 0 0 transparent; width:300px;"><img src="images/sunsetpark.png" width="300px"></div></div>
-      <div class="slide" style="background-color:#fee7ff;"><div class="image" title="Self-promo for <em><u>Zut Alors!</u></em>" style="box-shadow: 0px 4px 10px purple; width:300px;"><img src="images/zutbook.jpg" width="300px"></div></div>
-      <div class="slide" style="background-color:#3399ff;"><div class="image" title="Spread for <em><u>Yung Magazine</u></em>" style="box-shadow: 0px 4px 10px purple;"><img src="images/spread4.gif" width="700px"></div></div>
-      <div class="slide" style="background-color:#7b33ff;"><div class="image" title="Fictional show poster for a subway performer" style="box-shadow: 0px 4px 10px black; width:500px"><img src="images/poster.jpg" width="500px"></div></div>
-      <div class="slide" style="background-color: white;"><div class="text">Websites:<br><br> <ul><li><a href="http://www.brenthildebrand.com/">brenthildebrand.com</a> (Website for my paintings)</li><br><li>More coming very soon...</li></ul></div></div>
+  <div class="all-wrapper">
+
+    <div class="resume-wrapper">
+
+      <div class="resume-content">
+
+        <h3>Education</h3>
+
+        <ul>
+            <li>The Cooper Union - BFA 2016<br>(Full Tuition Scolarship)</li>
+        </ul>
+
+        <h3>Work Experience</h3>
+
+        <ul>
+
+            <li><em>First Capital Real Estate</em> - 2016</li>
+            <li><em>Saturday Program at Cooper Union Design Instructor</em> - 2014/2015</li>
+            <li><em>Magpie Furniture</em> - 2015</li>
+            <li><em>Zut Alors!</em> - 2014</li>
+            <li><em>Various Freelance</em> - 2012-2016</li>
+
+        </ul>
+
+        <h3>Skills</h3>
+
+        <ul>
+            <li>Photoshop, Illustrator, Indesign</li>
+            <li>HTML, CSS, JavaScript, JQuery</li>
+            <li>Microsoft Office</li>
+        </ul>
+
+      </div>
+
     </div>
-    <div class="section" id="#resume" style="background-color:#6600ff" data-anchor="resume"><div class="resume"></div><div class="up"><a href="#firstPage/?">Back</a></div></div>
+
+    <div class="info-wrapper">
+
+    <div class="info-content">
+    Brent Hildebrand is a graphic & web designer and artist who lives  in NYC.
+
+     <br><br>
+
+      <div class="resume btn">Resume</div>
+
+      <br>
+
+      For inqueries, submit comments below-
+
+      <br>
+
+    <form action="action_page.php">
+    <input type="text" name="firstname" placeholder="Email">
+    <br>
+    <textarea name="message" rows="6" style="width: calc(100% - 14px);" placeholder="Message"></textarea>
+    <input class="submit-btn" type="submit" value="Submit">
+  </form>
+
+    </div>
+
+  </div>
+
+  <div class="main-wrapper" id="main">
+
+  <div class="head">Brent Hildebrand</div>
+
+  <div class="info-button"><i class="fa fa-info" aria-hidden="true"></i></div>
+
+        <div class="section section-first">
+
+          <div class="section-desc">Spreads made for Yung Magazine</div>
+
+          <div class="rule"></div>
+
+          <div class="item-wrapper" id="yung">
+
+
+            <div class="item-test">
+              <img src="images/yung-spread-3.jpg" height="225">
+            </div>
+
+            <div class="item-test">
+              <img src="images/yung-spread-2.jpg" height="225">
+            </div>
+
+            <div class="item-test">
+              <img src="images/yung-spread-1.jpg" height="225">
+            </div>
+
+            <div class="item-test">
+              <img src="images/yung-spread-4.gif" height="225">
+            </div>
+
+            <div class="vertical-rule"></div>
+
+          </div>
+
+
+        </div>
+
+        <div class="section" id"second" target="second">
+
+          <div class="section-desc">Made while interning at <i>Zut Alors!</i></div>
+
+          <div class="rule"></div>
+
+          <div class="item-wrapper">
+
+            <div class="item-test">
+              <img src="images/nytimes.png" height="225">
+            </div>
+
+            <div class="item-test">
+              <img style="box-shadow: none" src="images/lips.png" height="225">
+            </div>
+
+            <div class="item-test">
+              <img src="images/zutbook.jpg" height="225">
+            </div>
+
+            <div class="vertical-rule"></div>
+
+          </div>
+
+
+        </div>
+
+        <div class="section">
+
+          <div class="section-desc">Student Work</i></div>
+
+          <div class="rule"></div>
+
+          <div class="item-wrapper">
+
+
+            <div class="item-test">
+              <img src="images/josif-poster.jpg" height="225">
+            </div>
+
+            <div class="item-test">
+              <img style="box-shadow: none;" src="images/sunsetpark-bag.png" height="225">
+            </div>
+
+            <div class="vertical-rule"></div>
+
+          </div>
+
+
+        </div>
+
+        <div class="section" style="margin-bottom: 0;">
+
+          <div class="section-desc">Websites</i></div>
+
+          <div class="rule"></div>
+
+          <div class="item-wrapper" style="padding-bottom: 0px;">
+
+            <span id="wrap">
+                <iframe id="frame" src="http://www.brenthildebrand.com" scrolling="auto" align="center"></iframe>
+
+                <a href="http://www.brenthildebrand.com"class="website-info">Website for my paintings</a>
+            </span>
+
+            <span id="wrap">
+                <iframe id="frame" src="http://firstcapitalre.com/" scrolling="auto" align="center"></iframe>
+
+                <a href="http://firstcapitalre.com/"class="website-info">Website for FCREI</a>
+            </span>
+
+            <span id="wrap">
+                <iframe id="frame" src="file:///Users/brenthildy/Desktop/github/bh/search-widget.html" scrolling="auto" align="center"></iframe>
+
+                <a href="http://firstcapitalre.com/"class="website-info">Search box widget (View on Github)</a>
+            </span>
+
+            <span id="wrap">
+                <iframe id="frame" src="file:///Users/brenthildy/Desktop/github/bh/index.html" scrolling="auto" align="center"></iframe>
+
+            </span>
+
+          </div>
+
+
+        </div>
+
+        <div class="footer">
+
+            Games: <span style="color: blue">I</span> | <span style="color: blue">II</span>
+
+            <span style="float: right">brnthildebrand@gmail.com</span>
+
+        </div>
+
+
+</div>
   </div>
 </body>
-</html>
+<html>
