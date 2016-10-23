@@ -197,7 +197,11 @@ textarea:focus{
   white-space: nowrap;
 }
 .section-first{
-  margin-top: 300px;
+  margin-top: 35vh;
+  transition: margin-top 1.5s;
+}
+.section-first-active{
+  margin-top: 0;
 }
 .item-wrapper{
   box-sizing: border-box;

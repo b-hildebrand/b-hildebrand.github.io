@@ -56,6 +56,8 @@ $(document).ready(function(){
 
     $(".item-test").click(function(){
 
+      $(".section-first").removeClass("section-first-active");
+
       $(".item-test > img").height("225");
       $(this).children("img").height("400");
 
@@ -73,6 +75,12 @@ $(document).ready(function(){
 
     });
   //
+
+//changes top-margin for first section when active
+
+    $(".section-first").click(function(){
+      $(".section-first").addClass("section-first-active");
+    })
 
 //smooth scroll
 
