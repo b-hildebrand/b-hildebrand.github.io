@@ -70,8 +70,8 @@ textarea:focus{
   height: 100vh;
   left: 0;
   transition: left .8s;
-  background: gold;
-  box-shadow: -3px 0 6px black, 2px 0px 1px #ffe866 inset;
+  background: rgb(220, 220, 220);;
+  box-shadow: -3px 0 6px black, 1px 0px 1px white inset;
   z-index: 4;
 }
 .no-scroll{
@@ -170,6 +170,9 @@ textarea:focus{
   background-color: #f2f2f2;
   color: #1a1a1a;
   transition: all .8s;
+  left: -800px;
+}
+.resume-wrapper-info-active{
   left: -400px;
 }
 .resume-wrapper-active{

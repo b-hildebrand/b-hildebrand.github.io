@@ -30,6 +30,7 @@ $(document).ready(function(){
         $(".main-wrapper").toggleClass("main-wrapper-info-active");
         $(".main-wrapper").toggleClass("no-scroll");
         $(".info-wrapper").toggleClass("info-wrapper-active");
+        $(".resume-wrapper").toggleClass("resume-wrapper-info-active");
 
         $(".main-wrapper").removeClass("main-wrapper-resume-active");
         $(".info-wrapper").removeClass("info-wrapper-resume-active");
