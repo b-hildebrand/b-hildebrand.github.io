@@ -96,7 +96,8 @@ $('.section').click( function() {
 var $form = $('form');
 $form.submit(function(){
    $.post($(this).attr('action'), $(this).serialize(), function(response){
-         $("form").html("<span style='color: green; font-size: 40px; padding-top: 25px;'>Submitted. Thanks!</span>")
+         $("form").html("");
+         $(".form-message").css("visibility","visible").hide().fadeIn(2000);
    },'json');
    return false;
 });

@@ -126,7 +126,7 @@ textarea:focus{
   padding: 5px 10px;
   border: 2px solid white;
   display: inline-block;
-  margin-top: 0px;
+  margin-top: 0;
   cursor: pointer;
   transition: all .4s ease;
   margin-bottom: 20px;
@@ -134,6 +134,21 @@ textarea:focus{
 .btn:hover{
   border-color: gold;
   color: gold;
+}
+.form-message{
+  color: purple;
+  font-size: 23px;
+  text-align: center;
+  visibility: hidden;
+  margin-top: 40px;
+}
+.links{
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+  width: calc(100% - 10px);
+  background: #1a1a1a;
+  box-shadow: 0 -10px 15px #1a1a1a;
 }
 /*RESUME*/
 .resume-wrapper{
