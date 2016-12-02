@@ -282,6 +282,11 @@ textarea:focus{
 .vertical-rule-active{
   height: 400px;
 }
+.item-info-icon{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 .footer{
   padding: 25px 35px 45px 35px;
 }
