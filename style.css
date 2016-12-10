@@ -37,6 +37,9 @@ textarea{
 textarea:focus{
   outline: 2px solid gold;
 }
+img{
+  box-shadow: 1px 1px 8px -1px grey;
+}
 .all-wrapper{
   position: absolute;
   outline: 1px solid red;
@@ -52,6 +55,7 @@ textarea:focus{
   height: 100vh;
   left: 0;
   transition: left .8s;
+  -webkit-transition: left .8s;
   background-color: white;
   background-image: url('images/pattern.png');
   box-shadow: -3px 0 6px black, 1px 0px 1px white inset;
@@ -191,6 +195,8 @@ textarea:focus{
 .section-first{
   margin-top: 35vh;
   transition: margin-top 2.7s;
+  -webkit-transition: margin-top 2.7s;
+
 }
 .section-first-active{
   margin-top: 0;
@@ -205,6 +211,7 @@ textarea:focus{
 
 .item{
   transition: all 1s;
+  -webkit-transition: all 1s;
   border: 2px solid #1a1a1a;
 }
 .item-test{
@@ -213,6 +220,7 @@ textarea:focus{
   margin: 0;
   vertical-align: middle;
   transition: all 1s;
+  -webkit-transition: all 1s;
 }
 .item-test + .item-test{
   margin-left: 20px;
@@ -254,6 +262,7 @@ textarea:focus{
   position: relative;
   box-shadow: 1px 1px 8px -1px grey;
   transition: height 1s;
+  -webkit-transition: height 1s;
 }
 .section-desc{
   position: absolute;
@@ -278,6 +287,7 @@ textarea:focus{
   vertical-align: middle;
   margin: 0;
   transition: all 1s;
+  -webkit-transition: all 1s;
 }
 .vertical-rule-active{
   height: 400px;
