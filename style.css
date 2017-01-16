@@ -28,6 +28,9 @@ a:hover{
 ::-webkit-scrollbar {
     display: none;
 }
+h3{
+  font-family: 'Roboto';
+}
 input:focus{
   outline: 2px solid gold;
 }
@@ -38,11 +41,10 @@ textarea:focus{
   outline: 2px solid gold;
 }
 img{
-  box-shadow: 1px 1px 8px -1px grey;
+  box-shadow: 0px 0px 4px -1px grey;
 }
 .all-wrapper{
   position: absolute;
-  outline: 1px solid red;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -74,11 +76,12 @@ img{
   font-family: 'Roboto', impact;
   float: left;
   font-size: 32px;
+  font-weight: 500;
   padding: 15px 20px;
   margin: 35px;
   margin-right: 18px;
   background-color: #f2f2f2;
-  border: 2px solid #1a1a1a;
+  border: 1px solid #1a1a1a;
 }
 .info-button{
   margin: 48px 0px;
@@ -90,7 +93,7 @@ img{
   vertical-align: center;
   line-height: 45px;
   background-color: #f2f2f2;
-  border: 2px solid #1a1a1a;
+  border: 1px solid #1a1a1a;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -107,7 +110,7 @@ img{
   position: absolute;
   left: -400px;
   transition: left .8s;
-  overflow: scroll;
+  overflow: hidden;
   box-shadow: -1px 0 6px #1a1a1a, 1px 0px 1px #444 inset;
 }
 .info-wrapper-active{
@@ -125,7 +128,6 @@ img{
   color: #f2f2f2;
   text-shadow: 1px 1px 10px black;
 }
-
 .btn{
   padding: 5px 10px;
   border: 2px solid white;
@@ -160,7 +162,7 @@ img{
   top: 0;
   width: 450px;
   height: 100vh;
-  background-color: gold;
+  background-color: #FFC900;
   color: orangered;
   transition: all .8s;
   left: -850px;
@@ -181,6 +183,98 @@ img{
 .resume-content li{
   font-size: 15px;
   line-height: 18px;
+}
+/*zoom*/
+.overlay-wrapper{
+  position: fixed;
+  left:0;top:0;height:100vh;width:100vw;
+  background: rgba(255, 255, 255, 0.95);
+  display: none;
+  overflow: hidden;
+}
+.zoom{
+  position: absolute;
+  height: calc(100vh - 100px);
+  width: calc(100vw - 540px);
+  left: 270px;
+  top: 50px;
+  background-image: url(images/nytimes.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: drop-shadow( 0px 0px 3px lightgrey);
+  filter: drop-shadow( 0px 0px 3px lightgrey);
+}
+.overlay-wrapper .shown-cap{
+  position: absolute;
+  left: 25px;
+  top: 40vh;
+  width: 220px;
+}
+.overlay-wrapper .shown-cap h3{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.overlay-wrapper .shown-cap p{
+  border-top: 1px solid black;
+  padding-top: 10px;
+  margin-top: 8px;
+}
+.hidden-cap{
+  display: none;
+}
+@media (max-width:1200px){
+  .zoom{
+    width: calc(100vw - 300px);
+    left: 150px;
+  }
+  .overlay-wrapper .shown-cap{
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .overlay-wrapper .shown-cap h3{
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    width: calc(100vw);
+    text-align: center;
+    border-bottom: none;
+  }
+  .overlay-wrapper .shown-cap p{
+    position: absolute;
+    left: 0px;
+    top: auto;
+    bottom: 5px;
+    width: calc(100vw);
+    text-align: center;
+    border-top: none;
+  }
+}
+@media (max-width:700px){
+  .zoom{
+    width: calc(100vw - 100px);
+    left: 50px;
+  }
+}
+@media (max-width:400px){
+  .zoom{
+    width: calc(100vw);
+    left: 0;
+  }
+}
+.x{
+  font-size: 30px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  background-image: url(images/remove.png);
+  background-position: center;
+  background-size: contain;
 }
 /*main*/
 .section{
@@ -208,22 +302,13 @@ img{
   overflow: scroll;
   white-space: nowrap;
 }
-
 .item{
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  border: 2px solid #1a1a1a;
-}
-.item-test{
   width: auto;
   display: inline-block;
   margin: 0;
   vertical-align: middle;
   transition: all 1s;
   -webkit-transition: all 1s;
-}
-.item-test + .item-test{
-  margin-left: 20px;
 }
 .item + .item{
   margin-left: 20px;
@@ -260,7 +345,7 @@ img{
 }
 .item-test > img{
   position: relative;
-  box-shadow: 1px 1px 8px -1px grey;
+  box-shadow: 1px 1px 6px -2px rgba(0,0,0,.3);
   transition: height 1s;
   -webkit-transition: height 1s;
 }
@@ -270,12 +355,12 @@ img{
   left: 35px;
   background-color: #f2f2f2;
   padding: 10px;
-  border: 2px solid #1a1a1a;
+  border: 1px solid #1a1a1a;
 }
 .rule{
   position: absolute;
   bottom: 0;
-  height: 2px;
+  height: 1px;
   width: calc(100% - 70px);
   background-color: #1a1a1a;
   left: 35px;
