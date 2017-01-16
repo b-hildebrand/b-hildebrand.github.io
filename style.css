@@ -85,6 +85,9 @@ img{
     overflow-y: scroll;
     overflow-scrolling: touch
   }
+  .all-wrapper{
+    overflow-y: scroll;
+  }
 }
 .no-scroll{
   overflow: hidden;
@@ -415,6 +418,9 @@ img{
   .overlay-wrapper .shown-cap h3{
     font-size: 8vw;
   }
+  .overlay-wrapper .shown-cap p{
+    display: none;
+  }
 }
 .x{
   font-size: 30px;
@@ -535,6 +541,10 @@ img{
   .section-first{
     margin-top: 0;
   }
+  .web-item-desc{
+    font-size: 4vw;
+    bottom: -50px;
+  }
 }
 .vertical-rule{
   display: inline-block;
@@ -555,4 +565,10 @@ img{
 }
 .footer{
   padding: 25px 35px 45px 35px;
+}
+@media only screen and (max-device-width:450px) {
+  .footer{
+    font-size: 4vw;
+    padding-bottom: 70px;
+  }
 }
