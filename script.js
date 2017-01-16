@@ -75,12 +75,14 @@ img.click(function(){
       $('.shown-cap').html(cap);
       overlay.fadeIn(400);
       $(".info-button").toggleClass("info-button-active");
+      $(".main-wrapper").addClass("no-scroll");
 
 });
 
 x.click(function(){
       overlay.fadeOut(400);
       $(".info-button").toggleClass("info-button-active");
+      $(".main-wrapper").removeClass("no-scroll");
 });
 
 //form submit
