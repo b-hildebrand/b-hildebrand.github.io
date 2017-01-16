@@ -15,6 +15,16 @@ textarea, input{
   margin-top: 10px;
   padding: 7px;
 }
+@media only screen and (max-device-width:450px) {
+  textarea, input{
+    font-size: 5vw;
+    line-height: 7vw;
+    border-width: 4px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+}
 a{
   color: gold;
   text-decoration: none;
@@ -42,6 +52,7 @@ textarea:focus{
 }
 img{
   box-shadow: 0px 0px 4px -1px grey;
+  cursor: pointer;
 }
 .all-wrapper{
   position: absolute;
@@ -69,8 +80,21 @@ img{
 .main-wrapper-info-active{
   left: 400px;
 }
+@media only screen and (max-device-width:450px) {
+  .main-wrapper{
+    transition: all 0s;
+  }
+  .main-wrapper-info-active{
+    left: 100vw;
+  }
+}
 .main-wrapper-resume-active{
   left: 850px;
+}
+@media only screen and (max-device-width:450px) {
+  .main-wrapper-resume-active{
+    left: 100vw;
+  }
 }
 .head{
   font-family: 'Roboto', impact;
@@ -82,6 +106,13 @@ img{
   margin-right: 18px;
   background-color: #f2f2f2;
   border: 1px solid #1a1a1a;
+}
+@media only screen and (max-device-width:450px) {
+  .head{
+    font-size: 9vw;
+    border-width: 4px;
+    padding: 20px 25px;
+  }
 }
 .info-button{
   margin: 48px 0px;
@@ -96,6 +127,15 @@ img{
   border: 1px solid #1a1a1a;
   border-radius: 100%;
   cursor: pointer;
+}
+@media only screen and (max-device-width:450px) {
+  .info-button{
+    font-size: 9vw;
+    line-height: 13vw;
+    width: 12vw;
+    height: 12vw;
+    border-width: 4px;
+  }
 }
 .info-button:hover{
 }
@@ -113,11 +153,24 @@ img{
   overflow: hidden;
   box-shadow: -1px 0 6px #1a1a1a, 1px 0px 1px #444 inset;
 }
+@media only screen and (max-device-width:450px) {
+  .info-wrapper{
+    width: 100vw;
+    padding-top: 100px;
+    box-sizing: border-box;
+    transition: all 0s;
+  }
+}
 .info-wrapper-active{
   left: 0;
 }
 .info-wrapper-resume-active{
   left: 450px;
+}
+@media only screen and (max-device-width:450px) {
+  .info-wrapper-resume-active{
+    left: 100vw;
+  }
 }
 .info-content{
   padding: 40px;
@@ -128,6 +181,12 @@ img{
   color: #f2f2f2;
   text-shadow: 1px 1px 10px black;
 }
+@media only screen and (max-device-width:450px) {
+  .info-content{
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+}
 .btn{
   padding: 5px 10px;
   border: 2px solid white;
@@ -136,6 +195,12 @@ img{
   cursor: pointer;
   transition: all .4s ease;
   margin-bottom: 20px;
+}
+@media only screen and (max-device-width:450px) {
+  .btn{
+    border-width: 4px;
+    padding: 20px 30px;
+  }
 }
 .btn:hover{
   border-color: gold;
@@ -148,6 +213,12 @@ img{
   visibility: hidden;
   margin-top: 40px;
 }
+@media only screen and (max-device-width:450px) {
+  .form-message{
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+}
 .links{
   position: absolute;
   left: 5px;
@@ -155,6 +226,24 @@ img{
   width: calc(100% - 10px);
   background: #1a1a1a;
   box-shadow: 0 -10px 15px #1a1a1a;
+}
+.info-x{
+  position: absolute;
+  right: 45px;
+  top: 45px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background-image: url(images/info-remove.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+@media only screen and (max-device-width:450px) {
+  .info-x{
+    display: block;
+  }
 }
 /*RESUME*/
 .resume-wrapper{
@@ -167,8 +256,22 @@ img{
   transition: all .8s;
   left: -850px;
 }
+@media only screen and (max-device-width:450px) {
+  .resume-wrapper{
+    width: 100vw;
+    box-sizing: border-box;
+    padding-top: 100px;
+    left: -200vw;
+    transition: all 0s;
+  }
+}
 .resume-wrapper-info-active{
   left: -450px;
+}
+@media only screen and (max-device-width:450px) {
+  .resume-wrapper-info-active{
+    left: -100vw;
+  }
 }
 .resume-wrapper-active{
   left: 0;
@@ -183,6 +286,34 @@ img{
 .resume-content li{
   font-size: 15px;
   line-height: 18px;
+}
+@media only screen and (max-device-width:450px) {
+  .resume-content{
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  .resume-content li{
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+}
+.resume-x{
+  position: absolute;
+  right: 45px;
+  top: 45px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background-image: url(images/resume-remove.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+@media only screen and (max-device-width:450px) {
+  .resume-x{
+    display: block;
+  }
 }
 /*zoom*/
 .overlay-wrapper{
@@ -225,8 +356,8 @@ img{
 }
 @media (max-width:1200px){
   .zoom{
-    width: calc(100vw - 300px);
-    left: 150px;
+    width: calc(100vw - 240px);
+    left: 120px;
   }
   .overlay-wrapper .shown-cap{
     left: 0;
@@ -252,13 +383,19 @@ img{
     border-top: none;
   }
 }
-@media (max-width:700px){
+@media (max-width:740px){
   .zoom{
     width: calc(100vw - 100px);
     left: 50px;
   }
 }
-@media (max-width:400px){
+@media (max-width:500px){
+  .zoom{
+    width: calc(100vw);
+    left: 0;
+  }
+}
+@media only screen and (max-device-width:450px) {
   .zoom{
     width: calc(100vw);
     left: 0;
@@ -275,6 +412,17 @@ img{
   background-image: url(images/remove.png);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-device-width:450px) {
+  .x{
+    top: auto;
+    bottom: 10vh;
+    left: 0;
+    width: 100vw;
+    outline: 1px solid red;
+    height: 150px;
+  }
 }
 /*main*/
 .section{
@@ -288,12 +436,6 @@ img{
 }
 .section-first{
   margin-top: 35vh;
-  transition: margin-top 2.7s;
-  -webkit-transition: margin-top 2.7s;
-
-}
-.section-first-active{
-  margin-top: 0;
 }
 .item-wrapper{
   box-sizing: border-box;

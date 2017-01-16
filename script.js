@@ -46,6 +46,25 @@ $(".resume").click(function(){
 
 });
 
+//mobile remove info
+$(".info-x").click(function(){
+
+      $(".main-wrapper").removeClass("main-wrapper-info-active");
+      $(".main-wrapper").removeClass("no-scroll");
+      $(".info-wrapper").removeClass("info-wrapper-active");
+
+});
+
+//mobile remove resume
+$(".resume-x").click(function(){
+
+      $(".resume-wrapper").toggleClass("resume-wrapper-active");
+      $(".info-wrapper").toggleClass("info-wrapper-resume-active");
+      $(".main-wrapper").toggleClass("main-wrapper-resume-active");
+
+});
+
+
 //image zoom overlay
 img.click(function(){
 
