@@ -400,6 +400,9 @@ img{
     width: calc(100vw);
     left: 0;
   }
+  .overlay-wrapper .shown-cap h3{
+    font-size: 8vw;
+  }
 }
 .x{
   font-size: 30px;
@@ -419,9 +422,8 @@ img{
     top: auto;
     bottom: 10vh;
     left: 0;
-    width: 100vw;
-    outline: 1px solid red;
-    height: 150px;
+    width: 300px;
+    height: 120px;
   }
 }
 /*main*/
