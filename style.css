@@ -14,6 +14,7 @@ textarea, input{
   font-size: 17px;
   margin-top: 10px;
   padding: 7px;
+  resize: vertical;
 }
 @media only screen and (max-device-width:450px) {
   textarea, input{
@@ -44,9 +45,7 @@ h3{
 input:focus{
   outline: 2px solid gold;
 }
-textarea{
-  resize: vertical;
-}
+
 textarea:focus{
   outline: 2px solid gold;
 }
