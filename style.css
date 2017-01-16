@@ -78,6 +78,12 @@ img{
   .main-wrapper{
     height: auto;
     overflow: visible;
+    overflow-y: scroll;
+    overflow-scrolling: touch
+  }
+  body{
+    overflow-y: scroll;
+    overflow-scrolling: touch
   }
 }
 .no-scroll{
@@ -507,11 +513,6 @@ img{
   padding: 10px;
   border: 1px solid #1a1a1a;
 }
-@media only screen and (max-device-width:450px) {
-  .section-desc{
-    font-size: 7vw;
-  }
-}
 .rule{
   position: absolute;
   bottom: 0;
@@ -519,6 +520,21 @@ img{
   width: calc(100% - 70px);
   background-color: #1a1a1a;
   left: 35px;
+}
+@media only screen and (max-device-width:450px) {
+  .section-desc{
+    font-size: 4vw;
+    border-width: 4px;
+  }
+  .rule{
+    height: 4px;
+  }
+  .item-wrapper{
+    padding-bottom: 160px;
+  }
+  .section-first{
+    margin-top: 0;
+  }
 }
 .vertical-rule{
   display: inline-block;
